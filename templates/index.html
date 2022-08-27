@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rapture</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+  <body class="container">
+
+    {% include 'header.html' %}
+
+    <h1 class='text-center'>Welcome to Rapture</h1>
+<!--     <img src="https://snr-rapture-web-v1.sanjaykumar111.repl.co/static/assets/images/4.jpg"> -->
+    <img src="https://assets.thehansindia.com/h-upload/2022/02/22/1600x960_1278217-rh.jpg" height='250' width='100%'>
+  <p class='lead mt-2 mb-4'>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+
+  <h2 class='text-center mt-2 mb-16'>Our Courses</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
+      {% for course in courses %}
+      {% include 'courseitem.html' %}
+      {% endfor %}
+    </div>
+    <hr>
+
+    {% include 'footer.html' %}
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+  </body>
+</html>
